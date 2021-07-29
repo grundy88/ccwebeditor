@@ -1,0 +1,36 @@
+.editor-header {
+  background-color: rgb(200, 234, 255);
+  height: 24px;
+  min-height: 24px;
+  display: flex;
+  flex-direction: row;
+  padding: 1px 10px;
+  justify-content: space-between;
+}
+
+.editor-header-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.editor-header-text {
+  font-size: 1.2em;
+  margin-top: auto;
+  margin-bottom: auto;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.editor-header-levelnum {
+  font-size: 0.7em;
+}
+
+.editor-header-menu-icon {
+  margin-right: 5px;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

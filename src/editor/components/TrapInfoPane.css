@@ -1,0 +1,38 @@
+.trap-info-pane {
+  background-color: #B0B030;
+}
+
+.trap-info-pane-list-container {
+  background-color: beige;
+  border: inset 3px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.trap-info-pane-list {
+  /* list-style-type: none; */
+  padding-left: 0px;
+  margin: 0px;
+  overflow: auto;
+  cursor: default;
+}
+
+.trap-info-pane-list li {
+  padding: 1px;
+} 
+
+.trap-info-pane-list li:nth-child(even) { 
+  background: rgb(219, 219, 185);
+}
+
+.trap-info-pane-list li.selected {
+  background: yellow;
+  border: solid 1px black;
+  padding: 0px;
+}
+
+.trap-info-pane-list-footer {
+  border-top: solid 1px black;
+  background-color: white;
+}

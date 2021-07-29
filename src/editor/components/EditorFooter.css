@@ -1,0 +1,109 @@
+.editor-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: 28px;
+  min-height: 28px;
+  background-color: lightsteelblue;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.editor-footer.activated {
+  background-color: lightgreen;
+}
+
+.editor-footer-tiles {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.editor-footer-gameboard-tiles {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 0.8em;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 0px 5px 0px 5px;
+}
+
+.editor-footer-gameboard-bottom-tile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px 5px 0px 5px;
+}
+
+.editor-footer-gameboard-tiles-text {
+  padding: 0px 5px 0px 5px;
+}
+
+.editor-footer-gameboard-tiles-layer {
+  font-variant: small-caps;
+  font-size: 1.1em;
+  color: darkorchid;
+  padding-right: 5px;
+}
+
+.editor-footer-status {
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 0px 5px 0px 5px;
+  font-size: 0.8em;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.editor-footer-save-type {
+  font-variant: small-caps;
+  font-size: 1.1em;
+  padding: 0px 5px;
+  color: darkslategray;
+}
+
+.editor-footer-gameinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 310px;
+}
+
+.editor-footer-activated {
+  background-color: rgb(196, 247, 196);
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  padding: 0px 10px;
+}
+
+.editor-footer-controls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-right: 2px solid darkgreen;
+  /* padding: 0px 10px; */
+  padding: 2px;
+  margin-right: 3px;
+}
+
+.editor-footer-seek {
+  width: 100px;
+}
+
+.editor-footer-keys {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2px;
+}
+
+.editor-footer-footwear {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 2px;
+}

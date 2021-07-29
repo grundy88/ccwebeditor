@@ -1,0 +1,38 @@
+.level-info-pane {
+  background-color: #A7EEDA;
+  /* background-color: #87CEFA; */
+  overflow: auto;
+}
+
+#level-hint {
+  resize: none;
+}
+
+.level-info-pane-header {
+  justify-content: flex-end;
+}
+
+.level-info-grid {
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: auto auto;
+  /* grid-template-columns: auto; */
+  grid-gap: 2px;
+  justify-items: end;
+}
+
+.level-info-grid-entry {
+  justify-self: start;
+}
+
+.level-info-grid-text-input {
+  width: 100%;
+}
+
+.level-chipcount-nonmatching {
+  background-color: rgb(255, 254, 169);
+}
+
+.level-info-label {
+  font-size: 0.8em;
+}

@@ -1,0 +1,36 @@
+.right-bar {
+  background-color: lightgray;
+  padding-top: 10px;
+  width: 20px;
+  height: 100%;
+  writing-mode: vertical-rl;
+  box-sizing: border-box;
+  cursor: default;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.right-bar-button {
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  padding: 8px 0px 8px 0px;
+  margin: 0px;
+  margin-bottom: 10px;
+  background-color: rgb(98, 98, 143);
+  color: #eeeeee;
+}
+
+.right-bar-button:hover {
+  background-color: darkblue;
+}
+
+.right-bar-button.unselected:hover {
+  background-color: darkgray;
+  color: black;
+}
+
+.right-bar-button.unselected {
+  background-color: lightgray;
+  color: black;
+}

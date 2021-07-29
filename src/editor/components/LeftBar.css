@@ -1,0 +1,35 @@
+.left-bar {
+  background-color: lightgray;
+  padding-bottom: 10px;
+  width: 20px;
+  height: 100%;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  text-align: right;
+  box-sizing: border-box;
+  cursor: default;
+}
+
+.left-bar-button {
+  /* border: 1px solid black; */
+  border-radius: 5px;
+  padding: 8px 0px 8px 0px;
+  margin: 0px;
+  margin-bottom: 10px;
+  background-color: blue;
+  color: white;
+}
+
+.left-bar-button:hover {
+  background-color: darkblue;
+}
+
+.left-bar-button.unselected:hover {
+  background-color: darkgray;
+  color: black;
+}
+
+.left-bar-button.unselected {
+  background-color: lightgray;
+  color: black;
+}

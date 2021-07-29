@@ -1,0 +1,145 @@
+.tile-palette-container {
+  background-color: lightgoldenrodyellow;
+  padding: 10px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  justify-content: space-between;
+}
+
+.tile-palette {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(16, 32px);
+  /* grid-template-columns: auto; */
+  grid-gap: 2px;
+  /* align-items: start; */
+  /* justify-items: start; */
+  justify-content: start;
+  flex: 1 1 1;
+  overflow: auto;
+}
+
+.tile-palette-current-tool-container {
+  /* flex: 1 1 0; */
+  /* margin-top: 10px; */
+  border: 2px solid black;
+  border-radius: 4px;
+}
+
+.tile-palette-current-tool-container-header {
+  background-color: lightgreen;
+  padding: 0px 5px 0px 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tile-palette-current-tool {
+  padding: 5px;
+  display: grid;
+  grid-auto-flow: row;
+  grid-template-columns: auto 32px 2fr auto;
+  grid-template-rows: 32px;
+  grid-gap: 5px;
+}
+
+.text-right {
+  text-align: right;
+  font-size: 0.5em;
+}
+
+.text-vcenter {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.directional-button {
+  border: solid 1px black;
+  border-radius: 3px;
+  padding: 2px 5px;
+  cursor: default;
+  background-color: #dddddd;
+}
+
+.directional-button:hover {
+  background-color: #bbbbbb;
+}
+
+.directional-button.on {
+  background-color: lightgreen;
+  box-shadow: 0 0 15px lightgreen;
+}
+
+.tile-palette-active-warning {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 4px solid lightgreen;
+  border-radius: 3px;
+  padding: 0px;
+  background-color: lightgray;
+  text-align: center;
+  font-size: 0.8em;
+}
+
+.tile-palette-active-warning-header {
+  background-color: rgb(240, 240, 240);
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid black;
+  font-size: 1.2em;
+  /* color: white; */
+}
+
+/* -------------------------------------------------------- */
+
+.tile-palette-layer-switch {
+  position: relative; width: 100px;
+  -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.tile-palette-layer-switch-checkbox {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+.tile-palette-layer-switch-label {
+  display: block; overflow: hidden; cursor: pointer;
+  border: 2px solid #999999; border-radius: 10px;
+}
+.tile-palette-layer-switch-inner {
+  display: block; width: 200%; margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+.tile-palette-layer-switch-inner:before, .tile-palette-layer-switch-inner:after {
+  display: block; float: left; width: 50%; height: 12px; padding: 0; line-height: 12px;
+  font-size: 10px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+  box-sizing: border-box;
+}
+.tile-palette-layer-switch-inner:before {
+  content: "top layer only";
+  padding-left: 10px;
+  background-color: #34A7C1; color: #FFFFFF;
+}
+.tile-palette-layer-switch-inner:after {
+  content: "both layers";
+  padding-right: 10px;
+  background-color: #DB9983; color: #FFFFFF;
+  text-align: right;
+}
+.tile-palette-layer-switch-switch {
+  display: block; width: 14px; margin: -1px;
+  background: #FFFFFF;
+  position: absolute; top: 0; bottom: 0;
+  right: 84px;
+  border: 2px solid #999999; border-radius: 10px;
+  transition: all 0.3s ease-in 0s; 
+}
+.tile-palette-layer-switch-checkbox:checked + .tile-palette-layer-switch-label .tile-palette-layer-switch-inner {
+  margin-left: 0;
+}
+.tile-palette-layer-switch-checkbox:checked + .tile-palette-layer-switch-label .tile-palette-layer-switch-switch {
+  right: 0px; 
+}

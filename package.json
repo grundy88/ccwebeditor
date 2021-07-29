@@ -1,0 +1,56 @@
+{
+  "name": "ccwebeditor",
+  "version": "0.5.0",
+  "private": true,
+  "dependencies": {
+    "@szhsin/react-menu": "^1.10.0",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.3",
+    "@testing-library/user-event": "^12.6.0",
+    "bitset": "^5.1.1",
+    "browser-nativefs": "^0.12.0",
+    "express": "^4.17.1",
+    "file-saver": "^2.0.5",
+    "filereader": "^0.10.3",
+    "mobx": "^6.0.4",
+    "mobx-react": "^7.0.5",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.1",
+    "react-sortable-hoc": "^1.11.0",
+    "react-tooltip": "^4.2.11",
+    "simple-console-logger": "^2.0.2",
+    "styled-components": "^5.2.1",
+    "typescript": "^4.1.3",
+    "uifx": "^2.0.7",
+    "web-vitals": "^0.2.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

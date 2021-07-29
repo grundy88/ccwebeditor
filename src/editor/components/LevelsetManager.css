@@ -1,0 +1,46 @@
+.levelset-manager {
+  background-color: lightyellow;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 0px 5px 5px 5px;
+  box-sizing: border-box;
+}
+
+
+.levelset-list-container {
+  background-color: beige;
+  border: inset 3px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.levelset-list {
+  /* list-style-type: none; */
+  padding-left: 0px;
+  margin: 0px;
+  overflow: auto;
+  cursor: default;
+}
+
+.levelset-list .levelset-list-item {
+  padding: 1px;
+  display: flex;
+  flex-direction: row;
+} 
+
+.levelset-list .levelset-list-item:nth-child(even) { 
+  background: rgb(219, 219, 185);
+}
+
+.levelset-list .levelset-list-item.selected {
+  background: yellow;
+  border: solid 1px black;
+  padding: 0px;
+}
+
+.levelset-list-footer {
+  border-top: solid 1px black;
+  background-color: white;
+}

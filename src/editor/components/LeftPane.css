@@ -1,0 +1,13 @@
+.left-pane {
+  background-color: lightgoldenrodyellow;
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 300px;
+}
+
+.left-panes {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

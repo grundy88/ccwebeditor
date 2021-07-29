@@ -1,0 +1,49 @@
+.monster-info-pane {
+  background-color: lightsteelblue;
+}
+
+.monster-info-pane-list-container {
+  background-color: beige;
+  border: inset 3px;
+  overflow: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.monster-info-pane-list {
+  padding-left: 0px;
+  margin: 0px;
+  overflow: auto;
+  cursor: default;
+}
+
+.monster-info-pane-list .monster-list-item {
+  padding: 1px;
+} 
+
+.monster-info-pane-list .monster-list-item:nth-child(even) { 
+  background: rgb(219, 219, 185);
+}
+
+.monster-info-pane-list .monster-list-item.selected {
+  background: yellow;
+  border: solid 1px black;
+  padding: 0px;
+}
+
+.monster-info-pane-list-footer {
+  border-top: solid 1px black;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.monster-info-pane-header-why {
+  font-size: 0.5em;
+  color: blue;
+  cursor: pointer;
+  white-space: nowrap;
+  padding-right: 5px;
+}

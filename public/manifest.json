@@ -1,0 +1,15 @@
+{
+  "short_name": "CCWebEditor",
+  "name": "CCWebEditor",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
